@@ -5,6 +5,9 @@
 <br>
 {{ fecha | date:'fullDate' | uppercase | lowercase }}
 {{nombre | uppercase}}
+
+
+{{5 | conversor : 7}}
 <br>
 <br>
 <input type="text" [(ngModel)]="prenda_a_guardar"><button (click)="guardar_prenda()">Añadir prenda</button>  
