@@ -9,6 +9,10 @@ import { EmpleadoComponent } from './empleado/empleado.component';
 import { HomeComponent } from './home/home.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { CochesComponent } from './coches/coches.component';
+import { HttpModule } from '@angular/http';
+import { PlantillasComponent } from './plantillas/plantillas.component';
+
+import { ConversorPipe } from './pipes/conversor.pipe';
 
 @NgModule({
   declarations: [
@@ -17,12 +21,15 @@ import { CochesComponent } from './coches/coches.component';
     EmpleadoComponent,
     HomeComponent,
     ContactoComponent,
-    CochesComponent
+    CochesComponent,
+    ConversorPipe, 
+    PlantillasComponent
   ],
   imports: [
     BrowserModule,
     routing,
-    FormsModule
+    FormsModule,
+    HttpModule
   ],
   providers: [appRoutingProviders],
   bootstrap: [AppComponent]
